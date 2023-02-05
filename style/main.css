@@ -1,0 +1,247 @@
+@import "fonts.css";
+
+:root {
+    --color_orange_1: #FB651D;
+    --color_orange_2: #FFBF93;
+    --color_waiter: #A18CF4;
+    --color_error: #F84061;
+    --color_sucess: #34D49D;
+    --color_grey_txt: #9397A0;
+    --color_grey_bg: #FAF9FE;
+    --color_page: #E6E6E6;
+    --color_RGPD: #49A5FF;
+    --color_cyber: #FF8B16;
+    --color_remote: #FFBC00;
+    --font_title: Gilroy;
+    --font_text: Poppins;
+}
+
+html {
+    font-family: var(--font_text);
+    background: var(--color_page);
+}
+
+.wlcm-banner {
+    font-family: var(--font_title);
+    margin: 1vw;
+    padding: 25px 25px 30px 50px;
+    border: white solid 1px;
+    color: white;
+    border-radius: 10px;
+    background: rgb(252, 122, 67);
+    background: linear-gradient(90deg, rgba(252, 122, 67, 1) 0%, rgba(255, 191, 147, 1) 100%);
+}
+
+#page-container {
+    margin: 50px 1vw 1vw 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.history {
+    width: 28vw;
+    background: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 50px;
+}
+
+.cyber-progress {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: conic-gradient(
+            white 3deg,
+            var(--color_sucess) 3deg 10deg,
+            white 10deg 13deg,
+            var(--color_error) 13deg 20deg,
+            white 20deg 23deg,
+            var(--color_waiter) 0deg);
+
+}
+
+.cover-progress {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cyber-progress {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: conic-gradient(
+            white 3deg,
+            var(--color_sucess) 3deg 10deg,
+            white 10deg 13deg,
+            var(--color_error) 13deg 20deg,
+            white 20deg 23deg,
+            var(--color_waiter) 0deg);
+
+}
+
+.cover-progress {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rgpd-progress {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: conic-gradient(
+            white 3deg,
+            var(--color_waiter) 0deg);
+
+}
+
+.remote-progress {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: conic-gradient(
+            white 3deg,
+            var(--color_waiter) 0deg);
+
+}
+
+ion-icon {
+    color: var(--color_orange_1);
+    font-size: 25px;
+}
+
+.group-title {
+    font-family: var(--font_title);
+}
+
+.legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.legend p {
+    font-family: var(--font_title);
+}
+
+.l-success::before {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    margin-right: 15px;
+    background: var(--color_sucess);
+
+}
+
+.l-error::before {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    margin-right: 15px;
+    background: var(--color_error);
+
+}
+
+.l-waiter::before {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    margin-right: 15px;
+    background: var(--color_waiter);
+
+}
+
+.courses {
+    background: white;
+    border-radius: 50px;
+    width: 60vw;
+    padding: 0 20px 20px 30px;
+}
+
+.courses-title {
+    font-family: var(--font_title);
+    color: var(--color_grey_txt);
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--color_grey_bg);
+    border-radius: 7px;
+    align-items: center;
+    padding: 0 15px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.task .title {
+    font-family: var(--font_title);
+    font-size: 17px;
+}
+
+.task button {
+    height: 45px;
+    width: 15%;
+    min-width: 60px;
+    color: var(--color_orange_1);
+    font-family: var(--font_title);
+    font-size: 20px;
+    background-color: transparent;
+    border: var(--color_orange_1) solid 2.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task button:active {
+    background-color: var(--color_page);
+}
+
+.category {
+    line-height: 0;
+    font-size: 13px;
+}
+
+.cyber {
+    color: var(--color_cyber);
+}
+
+.remote {
+    color: var(--color_remote);
+}
+
+button.success {
+    color: var(--color_sucess);
+    border: none;
+    cursor: default;
+}
+
+button.success:active {
+    background: transparent;
+}

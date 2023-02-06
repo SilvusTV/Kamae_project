@@ -19,6 +19,9 @@
 html {
     font-family: var(--font_text);
     background: var(--color_page);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .wlcm-banner {
@@ -73,6 +76,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 .cyber-progress {
     width: 150px;
     height: 150px;
@@ -81,11 +85,11 @@ html {
     align-items: center;
     border-radius: 50%;
     background: conic-gradient(
-            white 3deg,
-            var(--color_sucess) 3deg 10deg,
-            white 10deg 13deg,
-            var(--color_error) 13deg 20deg,
-            white 20deg 23deg,
+            white 2deg,
+            var(--color_sucess) 2deg 10deg,
+            white 10deg 12deg,
+            var(--color_error) 12deg 20deg,
+            white 20deg 22deg,
             var(--color_waiter) 0deg);
 
 }
@@ -99,6 +103,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 .rgpd-progress {
     width: 150px;
     height: 150px;
@@ -206,9 +211,15 @@ ion-icon {
     font-size: 17px;
 }
 
+.task .button {
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+
 .task button {
     height: 45px;
-    width: 15%;
+    width: 9vw;
     min-width: 60px;
     color: var(--color_orange_1);
     font-family: var(--font_title);
@@ -216,11 +227,21 @@ ion-icon {
     background-color: transparent;
     border: var(--color_orange_1) solid 2.5px;
     border-radius: 5px;
+    margin-left: 40px;
     cursor: pointer;
 }
 
 .task button:active {
     background-color: var(--color_page);
+}
+
+.b-error {
+    font-size: 18px;
+    color: var(--color_error);
+}
+.b-waiter {
+    font-size: 18px;
+    color: var(--color_waiter);
 }
 
 .category {
@@ -234,6 +255,10 @@ ion-icon {
 
 .remote {
     color: var(--color_remote);
+}
+
+.rgpd {
+    color: var(--color_RGPD);
 }
 
 button.success {

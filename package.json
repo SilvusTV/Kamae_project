@@ -1,0 +1,23 @@
+{
+  "name": "Kamae_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilvusTV/Kamae_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilvusTV/Kamae_project/issues"
+  },
+  "homepage": "https://github.com/SilvusTV/Kamae_project#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+}

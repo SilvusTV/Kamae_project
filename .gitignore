@@ -1,4 +1,4 @@
 /Kamae_mini_projet_dev.pdf
-*.txt
 /.idea/
-
+/node_modules/
+/package-lock.json

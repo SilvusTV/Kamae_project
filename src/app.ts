@@ -68,9 +68,9 @@ sortedStatus.forEach(function (value) {
     if (value.status === "Victoire") {
         var button = "<button class=\"success\">Victoire</button>"
     } else if (value.status === "Défaite") {
-        var button = "<span class='button' id='b-"+value.id+"'><p class='b-error'>Défaite •</p><button onclick='VorD("+parseInt(value.id)+")'>Go !</button></span>"
+        var button = "<span class='button' id='b-" + value.id + "'><p class='b-error'>Défaite •</p><button onclick='VorD(" + parseInt(value.id) + ")'>Go !</button></span>"
     } else {
-        var button = "<span class='button' id='b-"+value.id+"'><p class='b-waiter'>À commencer •</p><button onclick='VorD("+parseInt(value.id)+")'>Go !</button></span>"
+        var button = "<span class='button' id='b-" + value.id + "'><p class='b-waiter'>À commencer •</p><button onclick='VorD(" + parseInt(value.id) + ")'>Go !</button></span>"
     }
     if (courses) {
         courses.innerHTML +=
@@ -83,11 +83,21 @@ sortedStatus.forEach(function (value) {
             " </div>";
     }
 });
-function VorD(id:number) {
-    console.log(id)
+
+function VorD(id: number) {
+
     let data = Datas.find(x => parseInt(x.id) === id)?.title
-    console.log("======")
-    console.log(data)
-    const random = Math.floor(Math.random())
-    console.log(random)
+
+    const random = Math.round(Math.random())
+    const querySelector = document.getElementById("b-" + id + "")
+
+    if (random == 0) {
+        if (querySelector) {
+            querySelector.innerHTML = "<p class='b-error'>Défaite •</p><button onclick='VorD(" + id + ")'>Go !</button>"
+        }
+    } else {
+        if (querySelector) {
+            querySelector.innerHTML = "<button class=\"success\">Victoire</button>"
+        }
+    }
 }

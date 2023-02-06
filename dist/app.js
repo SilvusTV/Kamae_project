@@ -89,10 +89,17 @@ sortedStatus.forEach(function (value) {
 });
 function VorD(id) {
     var _a;
-    console.log(id);
     let data = (_a = Datas.find(x => parseInt(x.id) === id)) === null || _a === void 0 ? void 0 : _a.title;
-    console.log("======");
-    console.log(data);
-    const random = Math.floor(Math.random());
-    console.log(random);
+    const random = Math.round(Math.random());
+    const querySelector = document.getElementById("b-" + id + "");
+    if (random == 0) {
+        if (querySelector) {
+            querySelector.innerHTML = "<p class='b-error'>Défaite •</p><button onclick='VorD(" + id + ")'>Go !</button>";
+        }
+    }
+    else {
+        if (querySelector) {
+            querySelector.innerHTML = "<button class=\"success\">Victoire</button>";
+        }
+    }
 }

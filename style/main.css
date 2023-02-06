@@ -86,22 +86,12 @@ html {
     border-radius: 50%;
     background: conic-gradient(
             white 2deg,
-            var(--color_sucess) 2deg 10deg,
-            white 10deg 12deg,
-            var(--color_error) 12deg 20deg,
-            white 20deg 22deg,
+            var(--color_sucess) 2deg 118deg,
+            white 118deg 120deg,
+            var(--color_error) 120deg 238deg,
+            white 238deg 240deg,
             var(--color_waiter) 0deg);
 
-}
-
-.cover-progress {
-    width: 140px;
-    height: 140px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .rgpd-progress {
@@ -112,7 +102,9 @@ html {
     align-items: center;
     border-radius: 50%;
     background: conic-gradient(
-            white 3deg,
+            white 2deg,
+            var(--color_error) 2deg 118deg,
+            white 118deg 120deg,
             var(--color_waiter) 0deg);
 
 }
@@ -128,6 +120,16 @@ html {
             white 3deg,
             var(--color_waiter) 0deg);
 
+}
+
+cover-progress {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ion-icon {
@@ -188,6 +190,7 @@ ion-icon {
     border-radius: 50px;
     width: 60vw;
     padding: 0 20px 20px 30px;
+    margin: 0 1vw 0 0;
 }
 
 .courses-title {
@@ -239,6 +242,7 @@ ion-icon {
     font-size: 18px;
     color: var(--color_error);
 }
+
 .b-waiter {
     font-size: 18px;
     color: var(--color_waiter);

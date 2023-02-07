@@ -19,6 +19,9 @@
 html {
     font-family: var(--font_text);
     background: var(--color_page);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .wlcm-banner {
@@ -45,23 +48,10 @@ html {
     display: flex;
     flex-direction: column;
     padding: 0 20px 20px 50px;
-}
-
-.cyber-progress {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background: conic-gradient(
-            white 3deg,
-            var(--color_sucess) 3deg 10deg,
-            white 10deg 13deg,
-            var(--color_error) 13deg 20deg,
-            white 20deg 23deg,
-            var(--color_waiter) 0deg);
-
+}
+.legend p{
+    margin: 0 1.5vw 0 1.5vw;
 }
 
 .cover-progress {
@@ -73,6 +63,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 .cyber-progress {
     width: 150px;
     height: 150px;
@@ -81,24 +72,15 @@ html {
     align-items: center;
     border-radius: 50%;
     background: conic-gradient(
-            white 3deg,
-            var(--color_sucess) 3deg 10deg,
-            white 10deg 13deg,
-            var(--color_error) 13deg 20deg,
-            white 20deg 23deg,
+            white 2deg,
+            var(--color_sucess) 2deg 118deg,
+            white 118deg 120deg,
+            var(--color_error) 120deg 238deg,
+            white 238deg 240deg,
             var(--color_waiter) 0deg);
 
 }
 
-.cover-progress {
-    width: 140px;
-    height: 140px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .rgpd-progress {
     width: 150px;
     height: 150px;
@@ -107,7 +89,9 @@ html {
     align-items: center;
     border-radius: 50%;
     background: conic-gradient(
-            white 3deg,
+            white 2deg,
+            var(--color_error) 2deg 118deg,
+            white 118deg 120deg,
             var(--color_waiter) 0deg);
 
 }
@@ -123,6 +107,16 @@ html {
             white 3deg,
             var(--color_waiter) 0deg);
 
+}
+
+cover-progress {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ion-icon {
@@ -183,6 +177,7 @@ ion-icon {
     border-radius: 50px;
     width: 60vw;
     padding: 0 20px 20px 30px;
+    margin: 0 1vw 0 0;
 }
 
 .courses-title {
@@ -206,9 +201,15 @@ ion-icon {
     font-size: 17px;
 }
 
+.task .button {
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+
 .task button {
     height: 45px;
-    width: 15%;
+    width: 9vw;
     min-width: 60px;
     color: var(--color_orange_1);
     font-family: var(--font_title);
@@ -216,11 +217,22 @@ ion-icon {
     background-color: transparent;
     border: var(--color_orange_1) solid 2.5px;
     border-radius: 5px;
+    margin-left: 40px;
     cursor: pointer;
 }
 
 .task button:active {
     background-color: var(--color_page);
+}
+
+.b-error {
+    font-size: 18px;
+    color: var(--color_error);
+}
+
+.b-waiter {
+    font-size: 18px;
+    color: var(--color_waiter);
 }
 
 .category {
@@ -236,6 +248,10 @@ ion-icon {
     color: var(--color_remote);
 }
 
+.rgpd {
+    color: var(--color_RGPD);
+}
+
 button.success {
     color: var(--color_sucess);
     border: none;
@@ -244,4 +260,47 @@ button.success {
 
 button.success:active {
     background: transparent;
+}
+@media screen and (max-width: 769px) {
+    #page-container{
+        flex-direction: column;
+    }
+    .courses{
+        width: auto;
+        margin:0 2vw 2vw 2vw;
+    }
+    .history{
+        width: auto;
+        margin: 0 2vw 2vw 2vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 33%;
+        justify-content: space-around;
+    }
+    .group-progress{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .wlcm-banner{
+        font-size: 5vw;
+    }
+    .task{
+        padding: 0;
+    }
+    .task .title{
+        font-size: 3vw;
+    }
+    .task .category{
+        font-size: 2vw;
+    }
+    .task button{
+        font-size:  3vw;
+    }
+    .b-waiter, .b-error{
+        font-size: 2.5vw;
+    }
+    .history{
+        flex-direction: column;
+    }
 }

@@ -1,8 +1,8 @@
 @font-face {
     font-family: Gilroy;
-    src: url(/asset/fonts/Gilroy-Bold.otf);
+    src: url(../asset/fonts/Gilroy-Bold.otf);
 }
 @font-face {
     font-family: Poppins;
-    src: url(/asset/fonts/Poppins-Regular.otf);
+    src: url(../asset/fonts/Poppins-Regular.otf);
 }

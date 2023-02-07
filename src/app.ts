@@ -95,10 +95,7 @@ function VorD(id: number) {
     if (random == 0) {
         if (querySelector) {
             querySelector.innerHTML = "<p class='b-error'>Défaite •</p><button onclick='VorD(" + id + ")'>Go !</button>"
-                const cyber = document.getElementById("cyber-project")
-            if (cyber){
-                cyber.setAttribute("style", "background: red")
-            }
+            const cyber = document.getElementById("cyber-project")
         }
     } else {
         if (querySelector) {

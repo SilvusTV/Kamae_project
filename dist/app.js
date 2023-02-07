@@ -97,9 +97,6 @@ function VorD(id) {
         if (querySelector) {
             querySelector.innerHTML = "<p class='b-error'>Défaite •</p><button onclick='VorD(" + id + ")'>Go !</button>";
             const cyber = document.getElementById("cyber-project");
-            if (cyber) {
-                cyber.setAttribute("style", "background: red");
-            }
         }
     }
     else {

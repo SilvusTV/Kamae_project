@@ -1,5 +1,5 @@
 "use strict";
-alert("Bonjour et bienvenue sur mon interprétation du projet demandé. \n\n-Affichages par foreach à base d'un json dans le JS\n-Bouton \"Go !\" interactif (/!\\ reset en F5 juste visuel)\n-graphique non fonctionnel ");
+alert("Bonjour et bienvenue sur mon interprétation du projet demandé. \n\n-Affichages par foreach à base d'un json dans le JS\n-Bouton \"Go !\" interactif (/!\\ reset en F5 juste visuel)\n-Graphique non fonctionnel\n-Responsive design");
 const Datas = [
     {
         "title": "Introduction Cybersécurité",

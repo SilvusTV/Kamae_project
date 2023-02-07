@@ -48,23 +48,10 @@ html {
     display: flex;
     flex-direction: column;
     padding: 0 20px 20px 50px;
-}
-
-.cyber-progress {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background: conic-gradient(
-            white 3deg,
-            var(--color_sucess) 3deg 10deg,
-            white 10deg 13deg,
-            var(--color_error) 13deg 20deg,
-            white 20deg 23deg,
-            var(--color_waiter) 0deg);
-
+}
+.legend p{
+    margin: 0 1.5vw 0 1.5vw;
 }
 
 .cover-progress {
@@ -273,4 +260,47 @@ button.success {
 
 button.success:active {
     background: transparent;
+}
+@media screen and (max-width: 769px) {
+    #page-container{
+        flex-direction: column;
+    }
+    .courses{
+        width: auto;
+        margin:0 2vw 2vw 2vw;
+    }
+    .history{
+        width: auto;
+        margin: 0 2vw 2vw 2vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 33%;
+        justify-content: space-around;
+    }
+    .group-progress{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .wlcm-banner{
+        font-size: 5vw;
+    }
+    .task{
+        padding: 0;
+    }
+    .task .title{
+        font-size: 3vw;
+    }
+    .task .category{
+        font-size: 2vw;
+    }
+    .task button{
+        font-size:  3vw;
+    }
+    .b-waiter, .b-error{
+        font-size: 2.5vw;
+    }
+    .history{
+        flex-direction: column;
+    }
 }

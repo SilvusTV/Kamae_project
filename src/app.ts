@@ -1,3 +1,4 @@
+alert("Bonjour et bienvenue sur mon interprétation du projet demandé. \n\n-Affichages par foreach à base d'un json dans le JS\n-Bouton \"Go !\" interactif (/!\\ reset en F5 juste visuel)\n-graphique non fonctionnel ")
 const Datas = [
     {
         "title": "Introduction Cybersécurité",
@@ -7,7 +8,7 @@ const Datas = [
     },
     {
         "title": "Protéger son WiFi personnel",
-        "category": "À la maison",
+        "category": "A la maison",
         "status": "A commencer",
         "id": "1"
     },
@@ -77,7 +78,7 @@ sortedStatus.forEach(function (value) {
             "<div class=\"task\">" +
             "<span class=\"task-txt\">" +
             "<p class=\"title\">" + value.title + "</p>" +
-            "<p class=\"category " + category + "\">" + value.category + "</p>" +
+            "<p class=\"category " + category + " category\">" + value.category + "</p>" +
             "</span>" +
             button +
             " </div>";
@@ -94,6 +95,10 @@ function VorD(id: number) {
     if (random == 0) {
         if (querySelector) {
             querySelector.innerHTML = "<p class='b-error'>Défaite •</p><button onclick='VorD(" + id + ")'>Go !</button>"
+                const cyber = document.getElementById("cyber-project")
+            if (cyber){
+                cyber.setAttribute("style", "background: red")
+            }
         }
     } else {
         if (querySelector) {
